@@ -1,5 +1,405 @@
-.App {
+.Home {
   text-align: center;
+}
+.rectangle2 {
+  width: 1280px;
+  height: 70px;
+  display: flex;
+
+  align-items: start;
+  background-color: white; 
+  padding: 20px;
+}
+.logo img {
+  width: 101px;
+  height: 45px;
+  margin-left: 100px;
+}
+.navigation button {
+  width: auto;
+  height: auto;
+  background-color: black; 
+  color: white; 
+  padding: 10px 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.dropdown-button {
+  display: flex;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  border: white;
+}
+.arrow-button{
+  width: 15px;
+  height: 15px;
+  padding: 1px;
+  margin-left: 2px;
+}
+.navigation button:hover {
+  background-color: #0056b3; 
+
+  
+}
+
+.rectangle3 {
+  width: 500px;
+  height: 44px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 50px;
+  margin-left: 200px;
+}
+.search-button {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 2px;
+  
+}
+.other-service{
+  width: 200px;
+  margin-left: 66px;
+  margin-top: 15px;
+  border: white;
+}
+.dropdown-content {
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; 
+  top: 8%; 
+  border: white;
+  margin-left: 6px;
+  color: black;
+}
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #0056b3;
+}
+.sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 108px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: #806056;
+  margin-left: 49px;
+  position: relative; 
+  overflow: hidden; 
+}
+.sign-in button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+.sign-in::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0056b3; 
+  top: 0;
+  left: -100%; 
+  transition: left 0.3s ease; 
+  z-index: 0; 
+}
+
+.sign-in:hover::before {
+  left: 0; 
+}
+
+.sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 108px;
+  height: 44px;
+  border-radius: 50px;
+  background-color:white;
+  border: #806056 solid 1px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.sign-up button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+.sign-up::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0056b3; 
+  top: 0;
+  left: -100%; 
+  transition: left 0.3s ease; 
+  z-index: 0; 
+}
+
+.sign-up:hover::before {
+  left: 0; 
+}
+.banner-rectangle {
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 1360px;
+  height: 424px;
+}
+.banner {
+  height: 300px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  background: linear-gradient(90deg,#a88b7e,#d3ae8e,#aeab82);
+  padding: 30px;
+  overflow: visible;
+}
+.banner-text {
+margin-top: -50px;
+  flex: 1;
+  margin-right: 90px;
+}
+.banner-text h1{
+  margin-right: 100px;
+}
+.banenr-image img{
+  max-width: 100%;
+  height: auto;
+}
+.Type-tabs-rectangle {
+  margin-left: 60px;
+  margin-top: -90px;
+}
+.Type-tabs-rectangle button{
+  background-color: white;
+  border: transparent;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+.Type-tabs-rectangle button:hover {
+  color: #806056;
+  border-bottom: 2px solid #806056;
+}
+.filter-component {
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.filter-section {
+  margin-right: 20px;
+  padding-right: 50px; 
+  border-right: 2px solid #ccc;
+  position: relative;
+  display: inline-block;
+}
+.filter-section:last-child {
+  border-right: none;
+}
+
+
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+select{
+  color: #7d7d7d;
+  padding: 5px;
+  border: none;
+  background-color: #f0f0f0;
+  width: 180px;
+  height: 30px;
+  margin-left: 5px;
+  display: block;
+  appearance: none; 
+  background-repeat: no-repeat; 
+  background-position: right center; 
+  padding-right: 20px; 
+  position: relative;
+ 
+}
+#location {
+  background-image: url('/public/assets/location.png');
+  background-size: 20px 20px;
+}
+#price {
+  background-image: url('/public/assets/down-arrow.png');
+  background-size: 20px 20px;
+}
+
+#superficiality {
+  background-image: url('/public/assets/down-arrow.png');
+  background-size: 20px 20px;
+}
+.for-you-rectangle {
+  margin-left:  65px;
+  margin-top: 50px;
+}
+.for-you-rectangle p{
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+.Type-options-rectangle {
+  display: flex;
+  align-items: center;
+  padding-left: 65px;
+  margin-top: 30px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 350px 350px 350px 350px;
+  justify-content: center;
+}
+.productList{
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+.productCard{
+  margin-top: 50px;
+}
+.productImage{
+  width: 300px;
+  height: 200px;
+  border-radius:10px;
+}
+.productName {
+
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: 500;
+  padding: 10px;
+}
+.displayStack_1{
+  color: black;
+  font-size: 14px;
+}
+.row1{
+  display: flex;
+  justify-content: space-between;
+}
+.productLocation img {
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+}
+.productPrice span{
+  color: black;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.productPrice{
+  margin-right: 10px;
+  font-size: 17px;
+  color: #8c5a4b;
+}
+.row2{
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: auto;
+  margin-top: 5px;
+}
+.productSuperficiality{
+  font-size: 12px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.productSuperficiality img {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+.productBedroom{
+  font-size: 12px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.productBedroom img {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+.productBathroom{
+  margin-right: 15px;
+  font-size: 12px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.productBathroom img {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+
+}
+.InfoButton{
+  margin-top: 20px;
+  width: 290px;
+  height: 35px;
+  background-color: #806056;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.InfoButton button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+.InfoButton button:hover{
+  color: #0056b3;
 }
 
 .App-logo {
@@ -14,7 +414,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,11 +423,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
