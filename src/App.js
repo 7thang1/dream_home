@@ -1,30 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-import React, { useState } from 'react';
-import {Products} from './components/products';
-import contents from './contents'
+import logo from "./logo.svg";
+import "./App.css";
+import React, { useState } from "react";
+import { Products } from "./components/products";
+import contents from "./contents";
 
 function App() {
   const [ServicesDropdownOpen, setServicesDropdownOpen] = useState(false);
-  const [locationFilter, setLocationFilter] = useState('');
-  const [priceFilter, setPriceFilter] = useState('');
-  const [superficialityFilter, setSuperficialityFilter] = useState('');
+  const [locationFilter, setLocationFilter] = useState("");
+  const [priceFilter, setPriceFilter] = useState("");
+  const [superficialityFilter, setSuperficialityFilter] = useState("");
   const toggleServicesDropdown = () => {
     setServicesDropdownOpen(!ServicesDropdownOpen);
-  }
+  };
 
   const openServicesDropdown = () => {
     setServicesDropdownOpen(true);
-  }
+  };
 
   const closeServicesDropdown = () => {
     setServicesDropdownOpen(false);
-  }
-const handlePriceFilterChange = (e) => {
-  setPriceFilter(e.target.value);
-}
+  };
+  const handlePriceFilterChange = (e) => {
+    setPriceFilter(e.target.value);
+  };
   return (
-    <div className='App'>
+    <div className="App">
       <header></header>
       <body>
         <div className="rectangle2">
@@ -39,7 +39,11 @@ const handlePriceFilterChange = (e) => {
               <button>Dự án</button>
               <button>On Sale</button>
             </div>
-            <img src="/assets/search.png" alt="Search" className='search-button' />
+            <img
+              src="/assets/search.png"
+              alt="Search"
+              className="search-button"
+            />
           </div>
           <div className="other-service">
             <div className="dropdown">
@@ -48,7 +52,20 @@ const handlePriceFilterChange = (e) => {
                 onMouseEnter={openServicesDropdown}
                 onMouseLeave={closeServicesDropdown}
               >
-                Dịch vụ khác {ServicesDropdownOpen ? <img src='/assets/up-arrow.png' alt="Up Arrow" className='arrow-button' /> : <img src='/assets/down-arrow.png' alt="Down Arrow" className='arrow-button' />}
+                Dịch vụ khác{" "}
+                {ServicesDropdownOpen ? (
+                  <img
+                    src="/assets/up-arrow.png"
+                    alt="Up Arrow"
+                    className="arrow-button"
+                  />
+                ) : (
+                  <img
+                    src="/assets/down-arrow.png"
+                    alt="Down Arrow"
+                    className="arrow-button"
+                  />
+                )}
               </button>
               {ServicesDropdownOpen && (
                 <div className="dropdown-content">
@@ -59,91 +76,96 @@ const handlePriceFilterChange = (e) => {
               )}
             </div>
           </div>
-          <div className='sign-in'>
+          <div className="sign-in">
             <button>Đăng nhập</button>
           </div>
-          <div className='sign-up'>
+          <div className="sign-up">
             <button>Đăng ký</button>
           </div>
         </div>
-        <div className='banner-rectangle'>
-          <div className='banner'>
-            <div className='banner-text'>
+        <div className="banner-rectangle">
+          <div className="banner">
+            <div className="banner-text">
               <h1>KHÁM PHÁ KHÔNG GIAN SỐNG LÝ TƯỞNG</h1>
-              <p>Lorem facilisis convallis quam sit varius. Enim nibh odio phasellus sem at sed id ut arcu. In turpis tortor diam mauris mauris magna adipiscing eu. </p>
+              <p>
+                Lorem facilisis convallis quam sit varius. Enim nibh odio
+                phasellus sem at sed id ut arcu. In turpis tortor diam mauris
+                mauris magna adipiscing eu.{" "}
+              </p>
             </div>
-            <div className='banner-image'>
-              <img src="/assets/house-banner.png" alt='House Banner' />
+            <div className="banner-image">
+              <img src="/assets/house-banner.png" alt="House Banner" />
             </div>
           </div>
         </div>
-        <div className='Type-tabs-rectangle'>
-          <button>Bán</button>
-          <button>Thuê</button>
-          <button>Dự án</button>
+        <div className="Type-tabs">
+          <div className="Type-tabs-rectangle">
+            <button className="Type-tabs-button">Bán</button>
+            <button className="Type-tabs-button">Thuê</button>
+            <button className="Type-tabs-button">Dự án</button>
+          </div>
+          <div class="Type-options-rectangle">
+            <div class="filter-component">
+              <div class="filter-section">
+                <label htmlFor="location">Vị trí</label>
+
+                <select
+                  id="location"
+                  value={locationFilter}
+                  onChange={(e) => setLocationFilter(e.target.value)}
+                >
+                  <option value="">Nơi bạn muốn sống</option>
+                  <option value="location1">Location 1</option>
+                  <option value="location2">Location 2</option>
+                  <option value="location3">Location 3</option>
+                </select>
+              </div>
+              <div class="filter-section">
+                <label htmlFor="price">Mức giá</label>
+                <select
+                  id="price"
+                  value={priceFilter}
+                  onChange={(e) => setPriceFilter(e.target.value)}
+                >
+                  <option value="">Chọn mức giá</option>
+                  <option value="price1">Price 1</option>
+                  <option value="price2">Price 2</option>
+                  <option value="price3">Price 3</option>
+                </select>
+              </div>
+              <div class="filter-section">
+                <label htmlFor="superficiality">Diện tích</label>
+                <select
+                  id="superficiality"
+                  value={superficialityFilter}
+                  onChange={(e) => setSuperficialityFilter(e.target.value)}
+                >
+                  <option value="">Chọn diện tích</option>
+                  <option value="superficiality1">Superficiality 1</option>
+                  <option value="superficiality2">Superficiality 2</option>
+                  <option value="superficiality3">Superficiality 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class='Type-options-rectangle'>
-    <div class="filter-component">
-      <div class="filter-section">
-        <label htmlFor="location">Vị trí</label>
-
-        <select
-          id="location"
-          value={locationFilter}
-          onChange={(e) => setLocationFilter(e.target.value)}
-        >
-          <option value="">Nơi bạn muốn sống</option>
-          <option value="location1">Location 1</option>
-          <option value="location2">Location 2</option>
-          <option value="location3">Location 3</option>
-
-        </select>
-
-       
-      </div>
-      <div class="filter-section">
-        <label htmlFor="price">Mức giá</label>
-        <select
-          id="price"
-          value={priceFilter}
-          onChange={(e) => setPriceFilter(e.target.value)}
-        >
-          <option value="">Chọn mức giá</option>
-          <option value="price1">Price 1</option>
-          <option value="price2">Price 2</option>
-          <option value="price3">Price 3</option>
-        </select>
-      </div>
-      <div class="filter-section">
-        <label htmlFor="superficiality">Diện tích</label>
-        <select
-          id="superficiality"
-          value={superficialityFilter}
-          onChange={(e) => setSuperficialityFilter(e.target.value)}
-        >
-          <option value="">Chọn diện tích</option>
-          <option value="superficiality1">Superficiality 1</option>
-          <option value="superficiality2">Superficiality 2</option>
-          <option value="superficiality3">Superficiality 3</option>
-        </select>
-      </div>
-    </div>
-  </div>
-<div className='for-you-rectangle'>
-  <p>Bất động sản dành cho bạn</p>
-</div>
-<div className='products'>
-  {contents.map(contents => (
-    <Products key={contents.id} 
-    image={contents.image}
-    name={contents.name}
-    location={contents.location}
-    price={contents.price}
-    superficiality={contents.superficiality}
-    bedroom={contents.bedroom}
-    bathroom={contents.bathroom} />
-  ))}
-</div>
+        <div className="for-you-rectangle">
+          <p>Bất động sản dành cho bạn</p>
+        </div>
+        <div className="products">
+          {contents.map((contents) => (
+            <Products
+              key={contents.id}
+              image={contents.image}
+              name={contents.name}
+              location={contents.location}
+              price={contents.price}
+              superficiality={contents.superficiality}
+              bedroom={contents.bedroom}
+              bathroom={contents.bathroom}
+            />
+          ))}
+        </div>
       </body>
     </div>
   );
