@@ -1,9 +1,11 @@
-import logo from "./logo.svg";
+import logo from "./logoroot.png";
 import "./App.css";
 import React, { useState } from "react";
 import { Products } from "./components/products";
 import contents from "./contents";
 import { createGlobalStyle } from "styled-components";
+import { BiSearch } from "react-icons/bi";
+import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -43,21 +45,28 @@ function App() {
             <div className="rectangle2">
               <div className="logo">
                 <img src={logo} className="App-logo" alt="logo" />
+                <p>Dream Home</p>
               </div>
-              <div className="rectangle3">
-                <div className="navigation">
-                  <button>Bán</button>
-                  <button>Thuê</button>
-                  <button>Tin tức</button>
-                  <button>Dự án</button>
-                  <button>On Sale</button>
-                </div>
-                <img
-                  src="/assets/search.png"
-                  alt="Search"
-                  className="search-button"
-                />
-              </div>
+              {/* <div className="rectangle3"> */}
+              <ul className="navigation">
+                <li>Bán</li>
+                <li>Thuê</li>
+                <li>Tin tức</li>
+                <li>Dự án</li>
+                <li>On Sale</li>
+                <li>
+                  <div className="search-button">
+                    <BiSearch className="search-icon" />
+                  </div>
+                  {/* <img
+                    src="/assets/search.png"
+                    alt="Search"
+                    className="search-button"
+                  /> */}
+                </li>
+              </ul>
+
+              {/* </div> */}
               <div className="other-service">
                 <div className="dropdown">
                   <button
@@ -89,16 +98,19 @@ function App() {
                   )}
                 </div>
               </div>
-              <div className="sign-in">
-                <button>Đăng nhập</button>
-              </div>
-              <div className="sign-up">
-                <button>Đăng ký</button>
+              <div className="nav-buttons">
+                <div className="sign-up">
+                  <button>Đăng ký</button>
+                </div>
+                <div className="sign-in">
+                  <button>Đăng nhập</button>
+                </div>
               </div>
             </div>
             <div className="banner-rectangle">
               <div className="banner">
                 <div className="banner-text">
+                  <h3>Chào mừng đến với Dream Home</h3>
                   <h1>KHÁM PHÁ KHÔNG GIAN SỐNG LÝ TƯỞNG</h1>
                   <p>
                     Lorem facilisis convallis quam sit varius. Enim nibh odio
