@@ -2,7 +2,7 @@ const productData = [
     {
         id:1,
         name:"Bán nhà Phố Trạm 35m2 5 tầng 3.3 tỷ nhà mới. Gần ô tỏa",
-        image: "https://i.ibb.co/M6cPRbN/pic1.jpg",
+        image: "../assets/pic1.jpg",
         location:"Long Biên, Hà Nội",
         price: '3.3 tỷ' ,
         superficiality: '35m2' ,
@@ -12,7 +12,7 @@ const productData = [
     {
         id:2,
         name:"Bán nhà Phố Trạm 35m2 5 tầng 3.3 tỷ nhà mới. Gần ô tỏa",
-        image: "https://i.ibb.co/47nBr2f/pic2.jpg",
+        image: "../assets/pic2.jpg",
         location:"Long Biên, Hà Nội",
         price: '3.3 tỷ' ,
         superficiality: '35m2' ,
@@ -22,7 +22,7 @@ const productData = [
     {
         id:3,
         name:"Bán nhà Phố Trạm 35m2 5 tầng 3.3 tỷ nhà mới. Gần ô tỏa",
-        image: "https://i.ibb.co/H7Cb80m/pic3.jpg",
+        image: "../assets/pic3.jpg",
         location:"Long Biên, Hà Nội",
         price: '3.3 tỷ' ,
         superficiality: '35m2' ,
@@ -32,7 +32,7 @@ const productData = [
     {
         id:4,
         name:"Bán nhà Phố Trạm 35m2 5 tầng 3.3 tỷ nhà mới. Gần ô tỏa",
-        image: "https://i.ibb.co/kQq66KZ/pic4.jpg",
+        image: "../assets/pic4.jpg",
         location:"Long Biên, Hà Nội",
         price: '3.3 tỷ' ,
         superficiality: '35m2' ,
@@ -42,7 +42,7 @@ const productData = [
     {
         id:5,
         name:"Bán nhà Phố Trạm 35m2 5 tầng 3.3 tỷ nhà mới. Gần ô tỏa",
-        image: "https://i.ibb.co/M6cPRbN/pic1.jpg",
+        image: "../assets/pic1.jpg",
         location:"Long Biên, Hà Nội",
         price: '3.3 tỷ' ,
         superficiality: '35m2' ,
@@ -52,7 +52,7 @@ const productData = [
     {
         id:6,
         name:"Bán nhà Phố Trạm 35m2 5 tầng 3.3 tỷ nhà mới. Gần ô tỏa",
-        image: "https://i.ibb.co/47nBr2f/pic2.jpg",
+        image: "../assets/pic2.jpg",
         location:"Long Biên, Hà Nội",
         price: '3.3 tỷ' ,
         superficiality: '35m2' ,
@@ -62,7 +62,7 @@ const productData = [
     {
         id:7,
         name:"Bán nhà Phố Trạm 35m2 5 tầng 3.3 tỷ nhà mới. Gần ô tỏa",
-        image: "https://i.ibb.co/H7Cb80m/pic3.jpg",
+        image: "../assets/pic3.jpg",
         location:"Long Biên, Hà Nội",
         price: '3.3 tỷ' ,
         superficiality: '35m2' ,
@@ -72,7 +72,7 @@ const productData = [
     {
         id:8,
         name:"Bán nhà Phố Trạm 35m2 5 tầng 3.3 tỷ nhà mới. Gần ô tỏa",
-        image: "https://i.ibb.co/kQq66KZ/pic4.jpg",
+        image: "../assets/pic4.jpg",
         location:"Long Biên, Hà Nội",
         price: '3.3 tỷ' ,
         superficiality: '35m2' ,
@@ -82,7 +82,7 @@ const productData = [
     {
         id:9,
         name:"Bán nhà Phố Trạm 35m2 5 tầng 3.3 tỷ nhà mới. Gần ô tỏa",
-        image: "https://i.ibb.co/M6cPRbN/pic1.jpg",
+        image: "../assets/pic1.jpg",
         location:"Long Biên, Hà Nội",
         price: '3.3 tỷ' ,
         superficiality: '35m2' ,
@@ -92,7 +92,7 @@ const productData = [
     {
         id:10,
         name:"Bán nhà Phố Trạm 35m2 5 tầng 3.3 tỷ nhà mới. Gần ô tỏa",
-        image: "https://i.ibb.co/47nBr2f/pic2.jpg",
+        image: "../assets/pic2.jpg",
         location:"Long Biên, Hà Nội",
         price: '3.3 tỷ' ,
         superficiality: '35m2' ,
@@ -102,7 +102,7 @@ const productData = [
     {
         id:11,
         name:"Bán nhà Phố Trạm 35m2 5 tầng 3.3 tỷ nhà mới. Gần ô tỏa",
-        image: "https://i.ibb.co/H7Cb80m/pic3.jpg",
+        image: "../assets/pic3.jpg",
         location:"Long Biên, Hà Nội",
         price: '3.3 tỷ' ,
         superficiality: '35m2' ,
@@ -112,7 +112,7 @@ const productData = [
     {
         id:12,
         name:"Bán nhà Phố Trạm 35m2 5 tầng 3.3 tỷ nhà mới. Gần ô tỏa",
-        image: "https://i.ibb.co/kQq66KZ/pic4.jpg",
+        image: "../assets/pic4.jpg",
         location:"Long Biên, Hà Nội",
         price: '3.3 tỷ' ,
         superficiality: '35m2' ,
